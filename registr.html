@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>NEWSTROY Account Login</title>
+  <link rel="shortcut icon" href="https://media.discordapp.net/attachments/466536259855056900/1413476246226079817/1757069252469.png?ex=68bc11d6&is=68bac056&hm=da092a8e3b560f32823355f602b10d72966ddde347b3d5d6dfb753d2a0a191b1&=&format=webp&quality=lossless&width=720&height=540" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cinzel', serif;
+      background: url(https://images.unsplash.com/photo-1526289034009-0240ddb68ce3?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBhcmNoaXRlY3R1cmV8ZW58MHx8MHx8fDA%3D) 
+        no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    nav {
+      background: #000;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .left a {
+      font-size: 30px;
+    }
+
+    .catalogue {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .catalogue a {
+      font-size: 20px;
+      color: gold;
+      padding: 8px 15px;
+      border-radius: 12px; 
+      transition: background-color 0.6s ease;
+    }
+
+    .catalogue a:hover {
+      opacity: 0.9;
+      background: #ffffff3b;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+      font-size: 30px;
+    }
+
+    .page {
+      min-height: calc(100vh - 80px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    #register {
+      background: rgba(0,0,0,0.85);
+      padding: 40px;
+      border-radius: 14px;
+      width: 400px;
+      text-align: center;
+      border: 2px solid gold;
+      box-shadow: 0 0 20px gold;
+    }
+
+    #register input {
+      width: 90%;
+      padding: 12px;
+      margin: 12px 0;
+      border: 2px solid gold;
+      border-radius: 8px;
+      font-family: 'Cinzel', serif;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    #register input:focus {
+      outline: none;
+      box-shadow: 0 0 10px gold;
+    }
+
+    #register .buttons {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    #register button,
+    #register .btn {
+      text-decoration: none;
+      width: 48%;
+      padding: 12px 0;
+      border-radius: 8px; 
+      background: gold;
+      font-weight: bold;
+      cursor: pointer;
+      color: black;
+      text-align: center;
+      font-family: 'Cinzel', serif;
+      font-size: 16px;
+      border: 2px solid gold;
+      transition: all 0.3s ease;
+    }
+
+    #register button:hover,
+    #register .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px gold;
+    }
+
+    #register h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+      font-weight: 700;
+      text-shadow: 0 0 6px black;
+      color: gold;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="left">
+      <img src="https://media.discordapp.net/attachments/466536259855056900/1413488690797482045/1757072298051.png?ex=68bc1d6d&is=68bacbed&hm=8fc66eec994552062513bf83eddea635c0dc1e0cd0e85a7d6a53393ec40f47e9&=&format=webp&quality=lossless&width=728&height=971" alt="Logo" width="150" height="150">
+      <a style=" color: gold;" href="main.html">𝘕𝘌𝘞𝘚𝘛𝘙𝘖𝘠</a>
+    </div>
+
+    <div class="catalogue">
+      <a style="color: gold;" href="assortment.html">▂ ▃ ▅ ▆ ▇ ▌ASSORTMENT▐ ▇ ▆ ▅ ▃ ▂</a>
+    </div>
+
+    <ul>
+      <li><a href="basket.html">🧺</a></li>
+      <li><a href="registr.html">🚪</a></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+    <div id="register">
+      <h2>Welcome for the first time!</h2>
+      <form id="registerForm">
+        <input type="text" id="regLogin" placeholder="Login" required>
+        <input type="password" id="regPass" placeholder="Password at least 6" required>
+        <input type="password" id="regPass2" placeholder="Confirm password" required>
+        <div class="buttons">
+          <a href="login.html" class="btn">Login</a>
+          <button type="submit">✔️</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="registr.js"></script>
+</body>
+</html>
